@@ -23,16 +23,12 @@ const illust = document.getElementById("illust");
 const shadow = document.getElementById("shadow");
 
 function handleResize() {
-  if (window.innerWidth >= 1440) {
+  if (window.innerWidth >= 1024) {
     illust.src = "./images/illustration-woman-online-desktop.svg";
     shadow.src = "./images/bg-pattern-desktop.svg";
-    box.src = "./images/illustration-box-desktop.svg";
-    box.alt = "A box";
-  } else if (window.innerWidth < 1440) {
+  } else if (window.innerWidth < 1024) {
     illust.src = "./images/illustration-woman-online-mobile.svg";
     shadow.src = "./images/bg-pattern-mobile.svg";
-    box.src = "";
-    box.alt = "";
   }
 }
 
